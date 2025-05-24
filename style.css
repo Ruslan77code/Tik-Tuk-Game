@@ -1,0 +1,84 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #1a3e72;
+}
+
+.game-container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #1a3e72;
+  margin-bottom: 1rem;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2c5282;
+  font-weight: bold;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.col {
+  background-color: #ebf4ff;
+  border: 2px solid #90cdf4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.col:hover {
+  background-color: #bee3f8;
+  transform: scale(1.03);
+}
+
+.col.X {
+  color: #3182ce;
+}
+
+.col.O {
+  color: #2b6cb0;
+}
+
+#reset {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reset:hover {
+  background-color: #2c5282;
+}
+
+.win-combination {
+  background-color: #bee3f8 !important;
+  box-shadow: 0 0 10px rgba(66, 153, 225, 0.5);
+}
